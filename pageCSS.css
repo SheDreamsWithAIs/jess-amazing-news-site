@@ -212,3 +212,27 @@ a.article-paragraph {
     font-family: "Aladin", system-ui;
     font-size: 1.2em;
 }
+
+/* Dialog Box Styling */
+#custom-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: none; /* Initially hidden */
+}
+
+.dialog-box {
+  background: #d7d8da;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px #000;
+}

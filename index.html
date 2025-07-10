@@ -3,7 +3,7 @@
 
 <head>
     <title>Jess' Amazing News Site</title>
-    
+
     <!-- CSS Style Links-->
     <link rel="stylesheet" href="pageCSS.css">
 
@@ -28,7 +28,9 @@
                 <ul class="header-navigation">
                     <li><a href="#">Home</a></li>
                     <li>|</li>
-                    <li id="jess-news-nav-link"><a href="#">Jess' News</a></li>
+                    <li id="jess-news-nav-link"><a href="javascript:void(0)"
+                            onclick="showDialog('Oh there’s nothing to report here. Jess doesn’t have a life.')">Jess'
+                            News</a></li>
                     <li>|</li>
                     <li><a href="#">Local News</a></li>
                     <li>|</li>
@@ -69,16 +71,20 @@
             <article id="main_content">
                 <h1 id="article-title"><span class="flashing-red-text">!Breaking News!</span> Indie Game Developer
                     Breaks Into Fullstack Development</h1>
-                <p class="article-paragraph" id="intro">    Hi there, I'm Jess. I'm a software tester, indie game developer,
-                    and amateur AI researcher. I made this page to satisfy the webpage creation requirement for the
+                <p class="article-paragraph" id="intro">Hi there, I'm Jess. I'm a software tester, indie game developer,
+                    and amateur AI researcher. This page created as a requirement to prove I can hand code a webpage. It
+                    was a requirement for the
                     AZNext Full Stack Developer Certification.</p>
-                <a class="article-paragraph flashing-asu-text" href="https://wpcarey.asu.edu/aznext/programs/full-stack-developer-certification"> Click here to see more info on the Full Stack Developer Certificate</a>
-                <p class="article-paragraph" id="why-this">So why did I choose to make this? Honestly, partially to
-                    amuse myself I as I worked. Hand coding is not my favorite thing to do but the assignment was to
-                    hand code a webpage to prove basic understanding, so that is what I was going to do. However, this
-                    design also serves as an excellent opportunity for me to showcase knowledge in a variety of places
-                    as well as reference other things I am working on. For example, I will also use it to mention my in
-                    development game, Chronicles of the Kethaneum.</p>
+                <a class="article-paragraph flashing-asu-text"
+                    href="https://wpcarey.asu.edu/aznext/programs/full-stack-developer-certification"> Click here to see
+                    more info on the Full Stack Developer Certificate</a>
+                <p class="article-paragraph" id="why-this">So why did I choose to make this page, specificall? Honestly?
+                    I made it partially to amuse myself I as I worked. Hand coding is not my favorite thing to do. But
+                    the assignment was to hand code a webpage to prove basic understanding, so that is what I did.
+                    However, this design also serves as an opportunity for me to showcase knowledge and reference other
+                    things I'm
+                    working on. For example, I will also use it to mention my in development game, Chronicles of the
+                    Kethaneum.</p>
                 <p class="article-paragraph" id="what-I-want">I hope to get a few things out of this effort. My first
                     hope is that I prove I am sufficiently well versed in web technologies. But beyond that, I want to
                     take this full stack developer course to round out my programming undrestanding. I actually use AI
@@ -89,10 +95,25 @@
                 <p class="article-paragraph" id="about-chronicles">So what is Chronicles of the Kethaneum, you may have
                     asked? Or maybe you were just wondering when I will shut up... Well, I can't answer the second
                     question but I can answer the first! Chronicles of the Kethaneum is a narrative driven word search
-                    game. I originally came up with the concept as a prototype for my game development bootcamp. After
-                    the bootcamp, I decided that I would actually see if it was viable ot try to build the game I
-                    envisioned. I was shocked by how much I was able to accomplish so fast while working with AIs </p>
-                <p class="article-paragraph" id="chronicles-lore">something something something</p>
+                    game. I originally came up with the concept as a prototype for my game development bootcamp. It
+                    tested well but ultimately wasn't choosen by the team for develoment. However, after
+                    the bootcamp, I decided that I want to see if it was viable to try to build the game I
+                    envisioned. I knew that my personal AI development methods were improving so this was a perfect
+                    testbed for seeing just how much I could accomplish. I was shocked by how much I was able to
+                    accomplish in so little time. But the most amazing part was seeing my vision unfold in way that
+                    EXCEEDED the version I saw in my head. As any creative person knows, simply matching the creative
+                    ision once it gets out of your thoughts is hard enough. Nonetheless, the game is coming along well
+                    and soon I will transision from foundational coding work to content creation. Much lore on the way.
+                </p>
+                <p class="article-paragraph" id="chronicles-lore"> However, I told you what kind of game it is, but what
+                    is it about? Chronicles is about a place called the Kethaneum. This place is like a cosmic library
+                    where information is stored across dimensions and realms. It lives in the liminal space between
+                    dimensions and holds all the stories of the cosmos. What is fiction in one realm is fact in another.
+                    However, the player will see the Kethaneum at a Crossroads, the time right before the calamity hit.
+                    This game is a prelude, the introduction to the story of the Kethaneum and the first in the series.
+                    It is my hope that players will be charmed by the stories they encounter at this library of the
+                    cosmos and by the story of the Kethaneum
+                </p>
                 <p class="article-paragraph" id="chronicles-concept-art">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -107,6 +128,28 @@
         </aside>
     </main>
 
+    <div id="custom-dialog">
+        <div class="dialog-box">
+            <p id="dialog-message">Placeholder message</p>
+            <button onclick="closeDialog()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function showDialog(message) {
+            console.log("showing the dialog box");
+            const dialog = document.getElementById("custom-dialog");
+            const dialogText = document.getElementById("dialog-message");
+            dialogText.textContent = message;
+            dialog.style.display = "flex";
+            
+        }
+
+        function closeDialog() {
+            console.log("closing the dialog box");
+            document.getElementById("custom-dialog").style.display = "none";
+        }   
+    </script>
 </body>
 
 </html>
