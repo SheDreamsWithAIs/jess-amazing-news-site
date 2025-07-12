@@ -26,21 +26,31 @@
         <div id="header-nav-container">
             <nav>
                 <ul class="header-navigation">
-                    <li>Home</li>
+                    <li id="home-nav-link">Home</li>
                     <li>|</li>
-                    <li id="jess-news-nav-link"><a href="javascript:void(0)"
+                    <li><a href="javascript:void(0)"
                             onclick="showDialog('Oh there\'s nothing to report here. Jess doesn\'t have a life.')">Jess'
                             News</a></li>
                     <li>|</li>
-                    <li><a href="javascript:void(0)" onclick="showDialog('Today in Local News: a suspiciously large pothole, a city council meeting where everyone politely ignores all of the elephants in the room (even the polka dot one), and of course, the annual Yogurt Festival—now with 20% more passive-aggressive signage.')">Local News</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showDialog('Today in Local News: a suspiciously large pothole, a city council meeting where everyone politely ignores all of the elephants in the room (even the polka dot one), and of course, the annual Yogurt Festival—now with 20% more passive-aggressive signage.')">Local
+                            News</a></li>
                     <li>|</li>
-                    <li><a href="javascript:void(0)" onclick="showDialog('The global situation is a flaming dumpster fire of chaos and mean spirited political choices. Proceed with caution unless you have snacks, odd emotional support items, and an unhealthy level of detachment from geopolitics.')">World News</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showDialog('The global situation is a flaming dumpster fire of chaos and mean spirited political choices. Proceed with caution unless you have snacks, odd emotional support items, and an unhealthy level of detachment from geopolitics.')">World
+                            News</a></li>
                     <li>|</li>
-                    <li><a href="javascript:void(0)" onclick="showDialog('In breaking news: cats continue to save humanity one blep at a time. Experts say sharing cat videos and memes have reduced the global homicide rate by 0.2%. Thank the cosmos for cats...')">Good News... (It's just animals)</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showDialog('In breaking news: cats continue to save humanity one blep at a time. Experts say sharing cat videos and memes have reduced the global homicide rate by 0.2%. Thank the cosmos for cats...')">Good
+                            News... (It's just animals)</a></li>
                     <li>|</li>
-                    <li><a href="javascript:void(0)" onclick="showDialog('This totally legitimate story will change your life forever. #7 made our interns cry tears of gold and you won’t believe what happened next—unless you have literally heard all of these promises before. >.>')">News That is Just an Excuse for More Ads</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showDialog('This totally legitimate story will change your life forever. #7 made our interns cry tears of gold and you won’t believe what happened next—unless you have literally heard all of these promises before. >.>')">News
+                            That is Just an Excuse for More Ads</a></li>
                     <li>|</li>
-                    <li><a href="javascript:void(0)" onclick="showDialog('Water rights are vanishing, people are fighting for medical access, and a climate migration crisis is brewing. But don\'t worry, all of these things got 38 views, collectively... Just less than a D-list celebrity blunder slideshow.')"> Important News That Can't Drive Ad Revenue</a></li>
+                    <li><a href="javascript:void(0)"
+                            onclick="showDialog('Water rights are vanishing, people are fighting for medical access, and a climate migration crisis is brewing. But don\'t worry, all of these things got 38 views, collectively... Just less than a D-list celebrity blunder slideshow.')">
+                            Important News That Can't Drive Ad Revenue</a></li>
                 </ul>
             </nav>
         </div>
@@ -118,7 +128,35 @@
             </article>
         </main>
         <aside id="article-cards-container">
-            <!-- Put some artworke here -->
+            <div>
+                <h1 id="article-cards-title" >Popular Articles</h1>
+            </div>
+            <div class="article-card">
+                <h3>Mild Panic at Local Supermarket After Avocados Declared Sentient</h3>
+                <p>Shoppers abandon carts mid-aisle as whispers of guacamole rebellion spread. One avocado reportedly hissed ''You'll regret this, Sarah...'</p>
+            </div>
+            <div class="article-card">
+                <h3>Cross Department Leadership Accidentally Approve Taking Care of The Issue</h3>
+                <p>Mass confusion and outbreaks of exhausted relief overtook employees at Corporate Corp, as leadership across departments somehow aligned and actually approved fixing the problem.</p>
+            </div>
+            <div class="article-card">
+                <h3>New Study Finds 87% of Local Crimes Could be Prevented with Excessive Glitter</h3>
+                <p>Local law enforcement expresses concerns. 'Theft is one thing,' one officer ventures. 'But this much sparkle? This is psychological warfare.'</p>
+            </div>
+            <div class="article-card">
+                <h3>Internet Communities Raise $2.3 Million to Protect the Last Existentially Anxious Pigeon</h3>
+                <p>Dubbed 'Todd', the pigeon is reportedly fine but won't stop doom scrolling or checking the fridge to see if there is finally a full meal there.</p>
+            </div>
+            <div class="article-card">
+                <h3>Local Man Discovers His Cat Has a Side Hustle as a Podcast Host</h3>
+                <p>Show titled “The Meowdel of Chaos” currently has 3,000 five-star reviews and one scathing comment from a dog named Baxter.</p>
+            </div>
+            <div class="article-card">
+                <h3>Scientists Confirm: Loud Sneezes Now Classified as Minor Seismic Events</h3>
+                <p>Three cat scientists confirmed that human sneezes register as seismic events—validating millennia of feline side-eyes and existential horror.</p>
+            </div>
+
+
 
         </aside>
     </main>
@@ -136,7 +174,7 @@
             const dialogText = document.getElementById("dialog-message");
             dialogText.textContent = message;
             dialog.style.display = "flex";
-            
+
         }
 
         function closeDialog() {
