@@ -111,7 +111,6 @@
 /* Main Content Styling */
 #content_sections_container {
     display: flex;
-    width: 1000 px;
     height: 70vh;
     background-color: #ffffff;
     font-size: 1.2em;
@@ -272,15 +271,26 @@ a.article-paragraph {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;           
   justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
 /* Image Dialog Box */
-#gallery-dialog .dialog-box img {
-  max-width: 90vh;
-  max-height: 80vh;
-  display: inline-block;
+.gallery-dialog-box img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
   margin: 0 auto 1rem;
+}
+
+.gallery-dialog-box {
+    background: #d7d8da;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 98vh;
+    max-height: 89vh;
+    text-align: center;
+    box-shadow: 0 0 15px #000;
 }
 
 
